@@ -10,8 +10,6 @@ description: |
 
   Block incoming requests whose body is greater than a specific size in megabytes.
 type: plugin
-categories:
-  - traffic-control
 kong_version_compatibility:
   community_edition:
     compatible: true

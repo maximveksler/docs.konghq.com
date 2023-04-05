@@ -32,8 +32,6 @@ description: |
   `remove.if_status`, `replace.body`, `replace.if_status`, `transform.functions`, `transform.if_status`,
   `allow.json`, `rename.if_status`, `transform.json`, and `dots_in_keys`.
 type: plugin
-categories:
-  - transformations
 kong_version_compatibility:
   community_edition:
     compatible: true

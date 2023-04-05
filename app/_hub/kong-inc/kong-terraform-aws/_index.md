@@ -1,8 +1,6 @@
 ---
 name: Kong on AWS with Terraform
 publisher: Kong Inc.
-categories:
-  - deployment
 type: integration
 desc: Terraform module to provision Kong and Kong Gateway clusters on Amazon Web Services.
 description: |

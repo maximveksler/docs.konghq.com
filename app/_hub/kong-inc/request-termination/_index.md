@@ -7,8 +7,6 @@ description: |
   message. This can be used to (temporarily) stop traffic on a Service or a Route,
   or even block a Consumer.
 type: plugin
-categories:
-  - traffic-control
 kong_version_compatibility:
   community_edition:
     compatible: true

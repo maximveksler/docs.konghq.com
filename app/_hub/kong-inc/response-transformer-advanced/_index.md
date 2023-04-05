@@ -33,8 +33,6 @@ description: |
     Because of Nginx's internals, the <code>Content-Length</code> header will not be set when transforming a response body.
   </div>
 type: plugin
-categories:
-  - transformations
 enterprise: true
 kong_version_compatibility:
   enterprise_edition:
