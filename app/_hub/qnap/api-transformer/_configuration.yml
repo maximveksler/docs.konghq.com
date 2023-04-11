@@ -1,4 +1,4 @@
-name: api-transformer
+name: API Transformer
 service_id: True
 consumer_id: False
 route_id: True
@@ -27,3 +27,21 @@ config:
     value_in_examples: true
     description: |
       We may need to use HTTP 200 approach in API error handling in some business cases.
+publisher: QNAP Inc.
+categories:
+  - transformations
+type: plugin
+desc: Kong middleware to transform requests / responses, using Lua script.
+description: |
+    This is a Kong Plugin that transforms requests and responses depending on your own business requirements.
+support_url: https://github.com/qnap-dev/kong-plugin-api-transformer/issues
+source_code:  https://github.com/qnap-dev/kong-plugin-api-transformer
+license_type: Apache-2.0
+license_url: https://github.com/qnap-dev/kong-plugin-api-transformer/blob/master/LICENSE
+
+kong_version_compatibility:
+  community_edition:
+    compatible:
+      - 1.0.x
+      - 1.1.x
+      - 1.2.x
