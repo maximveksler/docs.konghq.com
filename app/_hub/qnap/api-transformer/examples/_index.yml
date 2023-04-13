@@ -1,0 +1,5 @@
+name: api-transformer
+config:
+  request_transformer: /home/foo/api_xxx/req_transformer.lua,
+  response_transformer: home/foo/api_xxx/resp_transformer.lua
+  http_200_always: true

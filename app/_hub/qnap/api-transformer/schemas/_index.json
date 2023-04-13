@@ -31,7 +31,6 @@
             "request_transformer": {
               "type": "string",
               "required": true,
-              "examples": ["/home/foo/api_xxx/req_transformer.lua"],
               "description": "The .lua script to be used for the transformation.\nAvailable OpenResty variables and utils: [Check README](https://github.com/qnap-dev/kong-plugin-api-transformer#for-developer){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}"
             }
           },
@@ -39,7 +38,6 @@
             "response_transformer": {
               "type": "string",
               "required": true,
-              "examples": ["/home/foo/api_xxx/resp_transformer.lua"],
               "description": "The .lua script to be used for the transformation.\nAvailable OpenResty variables and utils: [Check README](https://github.com/qnap-dev/kong-plugin-api-transformer#for-developer){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}"
             }
           },
@@ -47,7 +45,6 @@
             "http_200_always": {
               "type": "boolean",
               "default": true,
-              "examples": [true],
               "description": "We may need to use HTTP 200 approach in API error handling in some business cases."
             }
           }

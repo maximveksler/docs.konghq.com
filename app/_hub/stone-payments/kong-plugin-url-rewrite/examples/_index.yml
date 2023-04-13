@@ -1,0 +1,3 @@
+name: kong-plugin-url-rewrite
+config:
+  url: http://new-url.com

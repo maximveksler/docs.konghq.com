@@ -30,14 +30,12 @@
           {
             "upstream_transformer_url": {
               "type": "string",
-              "examples": ["http://myhost/upstream/transform"],
               "description": "The URL of the Reedelk REST flow endpoint to invoke for the upstream\nrequest transformation."
             }
           },
           {
             "downstream_transformer_url": {
               "type": "string",
-              "examples": ["http://myhost/downstream/transform"],
               "description": "The URL of the Reedelk REST flow endpoint to invoke for the downstream\nrequest transformation."
             }
           }

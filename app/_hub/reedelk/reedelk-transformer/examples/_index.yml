@@ -1,0 +1,4 @@
+name: reedelk-transformer
+config:
+  upstream_transformer_url: http://myhost/upstream/transform
+  downstream_transformer_url: http://myhost/downstream/transform

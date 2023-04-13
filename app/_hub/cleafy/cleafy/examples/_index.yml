@@ -1,0 +1,3 @@
+name: cleafy
+config:
+  api_address: "http://cleafy.com"

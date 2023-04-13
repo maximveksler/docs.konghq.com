@@ -1,0 +1,5 @@
+name: kong-plugin-template-transformer:
+config:
+  request_template: { "email": "{{body.user}}", "password": "{{body.password}}" }
+  response_template: { "status": "{{status}}", "message": "{{body.message}}" }
+  hidden_fields: password

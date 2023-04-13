@@ -22,7 +22,6 @@
               "type": "string",
               "required": true,
               "default": null,
-              "examples": ["http://cleafy.com"],
               "description": "Specifies the URL pointing to the Cleafy API."
             }
           },
