@@ -1,23 +1,6 @@
 name: Cleafy plugin for Kong
-api_id: false
-service_id: false
-consumer_id: false
-route_id: true
-dbless_compatible: yes
-config:
-  - name: api_address
-    required: yes
-    default:
-    value_in_examples: http://cleafy.com
-    description: Specifies the URL pointing to the Cleafy API.
-  - name: accept_encoding
-    required: no
-    default:
-    value_in_examples:
-    description: Specifies the type of encoding accepted from the backend server. This plugin does not support gzip-encoded requests.
-
-name: Cleafy plugin for Kong
 publisher: Cleafy
+dbless_compatible: yes
 
 #header_icon: #FIXME # (optional) Uncomment only if you are submitting an icon
 

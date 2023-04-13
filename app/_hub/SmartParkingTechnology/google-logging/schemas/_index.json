@@ -1,0 +1,96 @@
+{
+  "fields": [
+    {
+      "consumer": {
+        "eq": null,
+        "type": "foreign",
+        "reference": "consumers"
+      }
+    },
+    {
+      "service": {
+        "eq": null,
+        "type": "foreign",
+        "reference": "services"
+      }
+    },
+    {
+      "route": {
+        "eq": null,
+        "type": "foreign",
+        "reference": "routes"
+      }
+    },
+    {
+      "protocols": {
+        "elements": {
+          "one_of": [
+            "http",
+            "https"
+          ],
+          "type": "string"
+        },
+        "required": true,
+        "type": "set",
+        "default": [
+          "http",
+          "https"
+        ]
+      }
+    },
+    {
+      "config": {
+        "fields": [
+          {
+            "log_id": {
+              "type": "string",
+              "default": "cloudresourcemanager.googleapis.com%2Factivity",
+              "description": "The log id in: `projects/[PROJECT_ID]/logs/[LOG_ID]`. Also see [LogEntry](https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}."
+            }
+          },
+          {
+            "google_key": {
+              "type": "string",
+              "description": "The private key parameters of the Google service account. Either `google_key` or `google_key_file` must be specified."
+            }
+          },
+          {
+            "google_key_file": {
+              "type": "string",
+              "description": "Path to the service account json file. The associated service account needs the scope: `https://www.googleapis.com/auth/logging.write`. Either `google_key` or `google_key_file` must be specified."
+            }
+          },
+          {
+            "resource": {
+              "type": "string",
+              "description": "The Google monitor resource. Also see [MonitoredResource](https://cloud.google.com/logging/docs/reference/v2/rest/v2/MonitoredResource){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}."
+            }
+          },
+          {
+            "retry_count": {
+              "type": "number",
+              "default": 0,
+              "description": "Kong batch queue `retry_count`."
+            }
+          },
+          {
+            "flush_timeout": {
+              "type": "number",
+              "default": 2,
+              "description": "Kong batch queue `flush_timeout` in seconds."
+            }
+          },
+          {
+            "batch_max_size": {
+              "type": "number",
+              "default": 200,
+              "description": "Kong batch queue `batch_max_size`."
+            }
+          }
+        ],
+        "type": "record",
+        "required": true
+      }
+    }
+  ]
+}

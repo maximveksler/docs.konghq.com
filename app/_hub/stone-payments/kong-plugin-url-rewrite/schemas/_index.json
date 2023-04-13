@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "consumer": {
+        "eq": null,
+        "type": "foreign",
+        "reference": "consumers"
+      }
+    },
+    {
+      "config": {
+        "fields": [
+          {
+            "url": {
+              "type": "string",
+              "required": true,
+              "default": "",
+              "examples": ["http://new-url.com"],
+              "description": "The url that you want to execute the request against. Completely overrides the upstream_uri property."
+            }
+          }
+        ],
+        "type": "record",
+        "required": true
+      }
+    }
+  ]
+}

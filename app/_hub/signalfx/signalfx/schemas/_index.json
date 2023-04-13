@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "config": {
+        "fields": [
+          {
+            "aggregate_by_http_method": {
+              "type": "boolean",
+              "required": true,
+              "default": true,
+              "description": "By default, metrics for each Service/API-fielded request cycle will be aggregated by a context determined partially by the request's HTTP method and by its response's status code.\nIf you are monitoring a large infrastructure with hundreds of routes, grouping by HTTP method can be too granular or costly for performant `/signalfx` requests on a 1s interval, depending on the server resources.\nThis context grouping can be disabled with the boolean configuration option `aggregate_by_http_method`."
+            }
+          }
+        ],
+        "type": "record",
+        "required": true
+      }
+    }
+  ]
+}

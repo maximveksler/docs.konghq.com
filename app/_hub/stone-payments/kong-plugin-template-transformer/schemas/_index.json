@@ -1,0 +1,55 @@
+{
+  "fields": [
+    {
+      "consumer": {
+        "eq": null,
+        "type": "foreign",
+        "reference": "consumers"
+      }
+    },
+    {
+      "config": {
+        "fields": [
+          {
+            "request_template": {
+              "type": "map",
+              "keys": {
+                "type": "string"
+              },
+              "values": {
+                "type": "string"
+              },
+              "examples": [{ "email": "{{body.user}}", "password": "{{body.password}}" }],
+              "description": "Describes the template to be used for the transformation. \n\nAvailable nginx variables: headers, body, custom_data, route_groups, query_string."
+            }
+          },
+          {
+            "response_template": {
+              "type": "map",
+              "keys": {
+                "type": "string"
+              },
+              "values": {
+                "type": "string"
+              },
+              "examples": [{ "status": "{{status}}", "message": "{{body.message}}" }],
+              "description": "Describes the template to be used for the transformation. \nAvailable nginx variables: headers, body, status."
+            }
+          },
+          {
+            "hidden_fields": {
+              "type": "array",
+              "elements": {
+                "type": "string"
+              },
+              "examples": ["password"],
+              "description": "Fields to hide in the nginx logs."
+            }
+          }
+        ],
+        "type": "record",
+        "required": true
+      }
+    }
+  ]
+}
